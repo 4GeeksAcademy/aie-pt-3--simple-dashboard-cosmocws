@@ -33,7 +33,7 @@
           <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Reporte consolidado</p>
-              <h2 class="mt-1 text-2xl font-bold">Impacto de anuncios y conversion</h2>
+              <h1 class="mt-1 text-2xl font-bold">Impacto de anuncios y conversion</h1>
               <p class="mt-2 max-w-2xl text-sm text-slate-600">Seguimiento unificado de Instagram, TikTok, YouTube, Facebook y X para priorizar decisiones de crecimiento, monetizacion y eficiencia.</p>
             </div>
             <dl class="grid grid-cols-2 gap-3 text-sm sm:w-auto sm:grid-cols-3">
@@ -133,12 +133,38 @@
           <div class="grid gap-4 xl:grid-cols-2">
             <article class="rounded-2xl bg-white p-4 shadow-sm" aria-labelledby="funnel-titulo">
               <h3 id="funnel-titulo" class="text-sm font-semibold text-slate-700">Conversion por etapas (funnel)</h3>
-              <div class="mt-4 grid gap-2 text-sm">
-                <div class="flex items-center justify-between rounded-lg bg-slate-100 px-3 py-2"><span>Alcance</span><strong>2,400,000</strong></div>
-                <div class="flex items-center justify-between rounded-lg bg-slate-100 px-3 py-2"><span>Clics</span><strong>69,600</strong></div>
-                <div class="flex items-center justify-between rounded-lg bg-slate-100 px-3 py-2"><span>Leads</span><strong>12,200</strong></div>
-                <div class="flex items-center justify-between rounded-lg bg-slate-100 px-3 py-2"><span>Checkout iniciado</span><strong>7,100</strong></div>
-                <div class="flex items-center justify-between rounded-lg bg-emerald-100 px-3 py-2"><span>Conversiones</span><strong>5,820</strong></div>
+              <div class="mt-4 overflow-x-auto">
+                <table class="charts-css column show-labels show-heading w-full text-xs">
+                  <caption class="mb-3 text-left text-sm font-medium text-slate-600">Porcentaje sobre alcance inicial: 2,400,000</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Etapa</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Alcance</th>
+                      <td style="--size: 1"><span class="data">100%</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Clics</th>
+                      <td style="--size: 0.029"><span class="data">2.9%</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Leads</th>
+                      <td style="--size: 0.00508"><span class="data">0.5%</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Checkout iniciado</th>
+                      <td style="--size: 0.00296"><span class="data">0.3%</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Conversiones</th>
+                      <td style="--size: 0.00243"><span class="data">0.24%</span></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </article>
 
@@ -227,42 +253,38 @@
 
             <article class="rounded-2xl bg-white p-4 shadow-sm" aria-labelledby="actividad-titulo">
               <h3 id="actividad-titulo" class="text-sm font-semibold text-slate-700">Actividad por plataforma</h3>
-              <div class="mt-4 grid gap-3 sm:grid-cols-2">
-                <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                  <div class="flex items-center justify-between">
-                    <h4 class="font-semibold text-slate-900">Instagram</h4>
-                    <span class="text-slate-700">190</span>
-                  </div>
-                  <div class="mt-2 h-2 rounded-full bg-slate-200"><div class="h-2 w-[95%] rounded-full bg-slate-900"></div></div>
-                </article>
-                <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                  <div class="flex items-center justify-between">
-                    <h4 class="font-semibold text-slate-900">TikTok</h4>
-                    <span class="text-slate-700">144</span>
-                  </div>
-                  <div class="mt-2 h-2 rounded-full bg-slate-200"><div class="h-2 w-[72%] rounded-full bg-slate-900"></div></div>
-                </article>
-                <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                  <div class="flex items-center justify-between">
-                    <h4 class="font-semibold text-slate-900">YouTube</h4>
-                    <span class="text-slate-700">82</span>
-                  </div>
-                  <div class="mt-2 h-2 rounded-full bg-slate-200"><div class="h-2 w-[41%] rounded-full bg-slate-900"></div></div>
-                </article>
-                <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                  <div class="flex items-center justify-between">
-                    <h4 class="font-semibold text-slate-900">Facebook</h4>
-                    <span class="text-slate-700">110</span>
-                  </div>
-                  <div class="mt-2 h-2 rounded-full bg-slate-200"><div class="h-2 w-[55%] rounded-full bg-slate-900"></div></div>
-                </article>
-                <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm sm:col-span-2">
-                  <div class="flex items-center justify-between">
-                    <h4 class="font-semibold text-slate-900">X</h4>
-                    <span class="text-slate-700">122</span>
-                  </div>
-                  <div class="mt-2 h-2 rounded-full bg-slate-200"><div class="h-2 w-[61%] rounded-full bg-slate-900"></div></div>
-                </article>
+              <div class="mt-4 overflow-x-auto">
+                <table class="charts-css bar show-labels show-heading w-full text-xs">
+                  <caption class="mb-3 text-left text-sm font-medium text-slate-600">Publicaciones por red social</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Plataforma</th>
+                      <th scope="col">Actividad</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Instagram</th>
+                      <td style="--size: 1"><span class="data">190</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">TikTok</th>
+                      <td style="--size: 0.758"><span class="data">144</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">YouTube</th>
+                      <td style="--size: 0.432"><span class="data">82</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Facebook</th>
+                      <td style="--size: 0.579"><span class="data">110</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">X</th>
+                      <td style="--size: 0.642"><span class="data">122</span></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </article>
 
@@ -316,110 +338,151 @@
 
           <article class="rounded-2xl bg-white p-4 shadow-sm" aria-labelledby="tabla-productos-titulo">
             <h3 id="tabla-productos-titulo" class="text-sm font-semibold text-slate-700">Tabla de productos</h3>
-            <div class="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-              <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                <h4 class="font-semibold text-slate-900">Producto A</h4>
-                <p class="mt-1 text-slate-600">Precio: 50 EUR</p>
-                <p class="text-slate-600">Ventas: 500</p>
-                <p class="text-slate-600">Comisiones: 3,750 EUR</p>
-                <p class="text-slate-600">Conversiones: 2,310</p>
-                <p class="text-slate-600">ROI: 3.2x</p>
-              </article>
-              <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                <h4 class="font-semibold text-slate-900">Producto B</h4>
-                <p class="mt-1 text-slate-600">Precio: 120 EUR</p>
-                <p class="text-slate-600">Ventas: 360</p>
-                <p class="text-slate-600">Comisiones: 6,480 EUR</p>
-                <p class="text-slate-600">Conversiones: 1,620</p>
-                <p class="text-slate-600">ROI: 4.4x</p>
-              </article>
-              <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                <h4 class="font-semibold text-slate-900">Producto C</h4>
-                <p class="mt-1 text-slate-600">Precio: 80 EUR</p>
-                <p class="text-slate-600">Ventas: 300</p>
-                <p class="text-slate-600">Comisiones: 3,600 EUR</p>
-                <p class="text-slate-600">Conversiones: 1,890</p>
-                <p class="text-slate-600">ROI: 3.6x</p>
-              </article>
+            <div class="mt-4 overflow-x-auto">
+              <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+                <thead class="bg-slate-100 text-slate-700">
+                  <tr>
+                    <th scope="col" class="px-3 py-2 font-semibold">Producto</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Precio</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Ventas</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Comisiones</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Conversiones</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">ROI</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 bg-white text-slate-700">
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium text-slate-900">Producto A</th>
+                    <td class="px-3 py-2">50 EUR</td>
+                    <td class="px-3 py-2">500</td>
+                    <td class="px-3 py-2">3,750 EUR</td>
+                    <td class="px-3 py-2">2,310</td>
+                    <td class="px-3 py-2">3.2x</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium text-slate-900">Producto B</th>
+                    <td class="px-3 py-2">120 EUR</td>
+                    <td class="px-3 py-2">360</td>
+                    <td class="px-3 py-2">6,480 EUR</td>
+                    <td class="px-3 py-2">1,620</td>
+                    <td class="px-3 py-2">4.4x</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium text-slate-900">Producto C</th>
+                    <td class="px-3 py-2">80 EUR</td>
+                    <td class="px-3 py-2">300</td>
+                    <td class="px-3 py-2">3,600 EUR</td>
+                    <td class="px-3 py-2">1,890</td>
+                    <td class="px-3 py-2">3.6x</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </article>
 
           <article class="rounded-2xl bg-white p-4 shadow-sm" aria-labelledby="tabla-plataformas-titulo">
             <h3 id="tabla-plataformas-titulo" class="text-sm font-semibold text-slate-700">Tabla de plataformas</h3>
-            <div class="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-              <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                <h4 class="font-semibold text-slate-900">Instagram</h4>
-                <p class="mt-1 text-slate-600">Alcance: 920,000</p>
-                <p class="text-slate-600">Engagement: 7.9%</p>
-                <p class="text-slate-600">Conversiones: 2,180</p>
-                <p class="text-slate-600">Mejor metrica: Interacciones</p>
-              </article>
-              <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                <h4 class="font-semibold text-slate-900">TikTok</h4>
-                <p class="mt-1 text-slate-600">Alcance: 680,000</p>
-                <p class="text-slate-600">Engagement: 8.2%</p>
-                <p class="text-slate-600">Conversiones: 1,540</p>
-                <p class="text-slate-600">Mejor metrica: Alcance organico</p>
-              </article>
-              <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                <h4 class="font-semibold text-slate-900">YouTube</h4>
-                <p class="mt-1 text-slate-600">Alcance: 410,000</p>
-                <p class="text-slate-600">Engagement: 6.4%</p>
-                <p class="text-slate-600">Conversiones: 1,120</p>
-                <p class="text-slate-600">Mejor metrica: ROAS</p>
-              </article>
-              <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                <h4 class="font-semibold text-slate-900">Facebook</h4>
-                <p class="mt-1 text-slate-600">Alcance: 250,000</p>
-                <p class="text-slate-600">Engagement: 5.1%</p>
-                <p class="text-slate-600">Conversiones: 620</p>
-                <p class="text-slate-600">Mejor metrica: Costo por clic</p>
-              </article>
-              <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                <h4 class="font-semibold text-slate-900">X</h4>
-                <p class="mt-1 text-slate-600">Alcance: 140,000</p>
-                <p class="text-slate-600">Engagement: 4.2%</p>
-                <p class="text-slate-600">Conversiones: 360</p>
-                <p class="text-slate-600">Mejor metrica: Velocidad de respuesta</p>
-              </article>
+            <div class="mt-4 overflow-x-auto">
+              <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+                <thead class="bg-slate-100 text-slate-700">
+                  <tr>
+                    <th scope="col" class="px-3 py-2 font-semibold">Plataforma</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Alcance</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Engagement</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Conversiones</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Mejor metrica</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 bg-white text-slate-700">
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium text-slate-900">Instagram</th>
+                    <td class="px-3 py-2">920,000</td>
+                    <td class="px-3 py-2">7.9%</td>
+                    <td class="px-3 py-2">2,180</td>
+                    <td class="px-3 py-2">Interacciones</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium text-slate-900">TikTok</th>
+                    <td class="px-3 py-2">680,000</td>
+                    <td class="px-3 py-2">8.2%</td>
+                    <td class="px-3 py-2">1,540</td>
+                    <td class="px-3 py-2">Alcance organico</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium text-slate-900">YouTube</th>
+                    <td class="px-3 py-2">410,000</td>
+                    <td class="px-3 py-2">6.4%</td>
+                    <td class="px-3 py-2">1,120</td>
+                    <td class="px-3 py-2">ROAS</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium text-slate-900">Facebook</th>
+                    <td class="px-3 py-2">250,000</td>
+                    <td class="px-3 py-2">5.1%</td>
+                    <td class="px-3 py-2">620</td>
+                    <td class="px-3 py-2">Costo por clic</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium text-slate-900">X</th>
+                    <td class="px-3 py-2">140,000</td>
+                    <td class="px-3 py-2">4.2%</td>
+                    <td class="px-3 py-2">360</td>
+                    <td class="px-3 py-2">Velocidad de respuesta</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </article>
 
           <article class="rounded-2xl bg-white p-4 shadow-sm" aria-labelledby="tabla-campanas-titulo">
             <h3 id="tabla-campanas-titulo" class="text-sm font-semibold text-slate-700">Tabla de campanas</h3>
-            <div class="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-              <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                <h4 class="font-semibold text-slate-900">Summer Boost</h4>
-                <p class="mt-1 text-slate-600">Fechas: 01/05 - 31/05</p>
-                <p class="text-slate-600">Productos: A, C</p>
-                <p class="text-slate-600">Plataformas: Instagram, TikTok</p>
-                <p class="text-slate-600">Resultados: 2,040 conv.</p>
-                <p class="text-slate-600">Rendimiento: Alto</p>
-              </article>
-              <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                <h4 class="font-semibold text-slate-900">Video Trust</h4>
-                <p class="mt-1 text-slate-600">Fechas: 15/05 - 10/06</p>
-                <p class="text-slate-600">Productos: B</p>
-                <p class="text-slate-600">Plataformas: YouTube, Facebook</p>
-                <p class="text-slate-600">Resultados: 1,380 conv.</p>
-                <p class="text-slate-600">Rendimiento: Muy alto</p>
-              </article>
-              <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                <h4 class="font-semibold text-slate-900">Flash Stories</h4>
-                <p class="mt-1 text-slate-600">Fechas: 20/05 - 02/06</p>
-                <p class="text-slate-600">Productos: A</p>
-                <p class="text-slate-600">Plataformas: Instagram, X</p>
-                <p class="text-slate-600">Resultados: 870 conv.</p>
-                <p class="text-slate-600">Rendimiento: Medio</p>
-              </article>
-              <article class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">
-                <h4 class="font-semibold text-slate-900">Creator Mix</h4>
-                <p class="mt-1 text-slate-600">Fechas: 03/06 - 10/06</p>
-                <p class="text-slate-600">Productos: A, B, C</p>
-                <p class="text-slate-600">Plataformas: Todas</p>
-                <p class="text-slate-600">Resultados: 1,530 conv.</p>
-                <p class="text-slate-600">Rendimiento: Alto</p>
-              </article>
+            <div class="mt-4 overflow-x-auto">
+              <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+                <thead class="bg-slate-100 text-slate-700">
+                  <tr>
+                    <th scope="col" class="px-3 py-2 font-semibold">Campana</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Fechas</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Productos</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Plataformas</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Resultados</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Rendimiento</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 bg-white text-slate-700">
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium text-slate-900">Summer Boost</th>
+                    <td class="px-3 py-2">01/05 - 31/05</td>
+                    <td class="px-3 py-2">A, C</td>
+                    <td class="px-3 py-2">Instagram, TikTok</td>
+                    <td class="px-3 py-2">2,040 conv.</td>
+                    <td class="px-3 py-2">Alto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium text-slate-900">Video Trust</th>
+                    <td class="px-3 py-2">15/05 - 10/06</td>
+                    <td class="px-3 py-2">B</td>
+                    <td class="px-3 py-2">YouTube, Facebook</td>
+                    <td class="px-3 py-2">1,380 conv.</td>
+                    <td class="px-3 py-2">Muy alto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium text-slate-900">Flash Stories</th>
+                    <td class="px-3 py-2">20/05 - 02/06</td>
+                    <td class="px-3 py-2">A</td>
+                    <td class="px-3 py-2">Instagram, X</td>
+                    <td class="px-3 py-2">870 conv.</td>
+                    <td class="px-3 py-2">Medio</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium text-slate-900">Creator Mix</th>
+                    <td class="px-3 py-2">03/06 - 10/06</td>
+                    <td class="px-3 py-2">A, B, C</td>
+                    <td class="px-3 py-2">Todas</td>
+                    <td class="px-3 py-2">1,530 conv.</td>
+                    <td class="px-3 py-2">Alto</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </article>
 
